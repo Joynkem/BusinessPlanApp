@@ -1,12 +1,21 @@
 *{
     margin: 0;
+    box-sizing: border-box;
+
 }
 body{
-    background: #66d2f9;
+    background: #bfdce7;
+}
+.signfm{
+background-color: #afa8e1;
+font-size: 3rem;
 }
 input{
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
+    padding: 12px;
+    border: 1px solid #f1afaf;
+    border-radius: 4px;
 }
 .planCats{
     display: grid;

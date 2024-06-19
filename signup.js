@@ -3,6 +3,8 @@
 //     firstname:'Janet',
 //     lastname: 'Henry',
 //     businessCategory: 'Fashion'
+
+
 // }
 const fnm = document.getElementById('fstnm');
 const lnm = document.getElementById('lstnm');
@@ -21,14 +23,15 @@ function regUser() {
 window.localStorage.setItem('userObj', JSON.stringify(userObj));
 }
 //Retrieve the object.
-let newUserObj = window.localStorage.getItem('userObj');
-console.log(JSON.parse(newUserObj));
+const newUserObj = window.localStorage.getItem('userObj');
+const userRehydrate = JSON.parse(newUserObj)
+console.log("NEWUSEROBJECT", userRehydrate);
 console.log(newUserObj);
-console.log(localStorage.getItem('lastname'));
+console.log("LASTNAME", userRehydrate.lastname);
 
 function signInUser() {
-    let signUpPswd = localStorage.getItem('password');
-    const signUpemale = localStorage.getItem('email');
+    let signUpPswd = userRehydrate.password;
+    const signUpemale = userRehydrate.email;
     //Get data from login form
    let signInpsd  = document.getElementById('pasworldd')
    let signIneml  = document.getElementById('emalle')
