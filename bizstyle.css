@@ -1,7 +1,16 @@
 *{
     margin: 0;
 }
+body{
+    background: #66d2f9;
+}
 input{
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
 }
+.planCats{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #F98866;
+    padding: 10px;
+  }

@@ -6,7 +6,6 @@
 // }
 const fnm = document.getElementById('fstnm');
 const lnm = document.getElementById('lstnm');
-const bizct = document.getElementById('bizcat');
 const pazzword = document.getElementById('pasworld');
 const emalle = document.getElementById('emale');
 
@@ -15,7 +14,6 @@ function regUser() {
     const userObj = {
         'firstname': fnm.value,
          'lastname': lnm.value, 
-         'bizct': bizct.value,
          'password': pazzword.value,
          'email': emalle.value
         }
