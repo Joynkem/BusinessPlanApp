@@ -30,11 +30,11 @@ console.log(newUserObj);
 console.log("LASTNAME", userRehydrate.lastname);
 
 function signInUser() {
-    let signUpPswd = userRehydrate.password;
+    const signUpPswd = userRehydrate.password;
     const signUpemale = userRehydrate.email;
     //Get data from login form
-   let signInpsd  = document.getElementById('pasworldd')
-   let signIneml  = document.getElementById('emalle')
+   const signInpsd  = document.getElementById('pasworldd')
+   const signIneml  = document.getElementById('emalle')
   //Compare stored data with data in sign in form. 
     if (signInpsd.value == signUpPswd && signIneml.value == signUpemale ) {
         //Open dashboard

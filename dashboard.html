@@ -8,14 +8,22 @@
 </head>
 <body>
   <p>This is your dashboard</p> 
-  <section>
-    <div class="planCats">
-
-    </div>
-  </section>
-    
-  </section>
+  <p>Fill the form to create a business.</p>
+    <form action="" class="bizfm">
+        <label for="biznm">Business/ Company Name:</label>
+        <input type="text" id="biznm" name=""><br>
+        <label for="dateofinc">Date of Incorporation:</label>
+        <input type="text" id="dateofinc" name=""><br>
+        <label for="ind">Industry:</label>
+        <input type="text" id="ind" name=""><br>
+        <label for="servises">Services: </label>
+        <textarea name="" id="servises" placeholder="Enter all the services you render"></textarea><br>
+        <label for="shtdesc">Intro:</label>
+        <textarea name="" id="shtdesc" placeholder="Not more than 20 letters"  rows="5"></textarea>
+    </form>
+    <button onclick="regUser()">Sign Up</button>
   
-  <script src="signup.js"></script>
+  <script src="./signup.js"></script>
+  
 </body>
 </html>
