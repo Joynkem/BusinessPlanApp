@@ -46,5 +46,29 @@ function signInUser() {
     }
 }
 
+const bizname = document.getElementById('biznm');
+const dateofinc = document.getElementById('dateofinc');
+const industry = document.getElementById('ind');
+const servicces = document.getElementById('servises');
+const intro = document.getElementById('shtdesc');
+
+function Business(buzinessname, dateofincorpo, iindustry, servises, introo, noofemployees) {
+    this.businessname = buzinessname;
+    this.dateofincorporation = dateofincorpo;
+    this.services = servises;
+    this.intro = introo;
+  }
+  
+  // Create a Person object
+  const business1 = new Business(bizname.value, dateofinc.value, industry.value, servicces.value, intro.value);
+  function createBusiness () {
+    //Convert the object to a string
+    window.localStorage.setItem('business1', JSON.stringify(business1));
+  }
+  const newBusiness1 = window.localStorage.getItem('business1');
+  const businessRehydrate = JSON.parse(newBusiness1);
+  console.log('NEWBUSINESSOBJECT', businessRehydrate);
+  console.log(newBusiness1);
+  console.log('BUSINESSNAME', businessRehydrate.businessname);
 
 
