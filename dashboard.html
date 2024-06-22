@@ -7,21 +7,45 @@
     <title>Your Dashboard</title>
 </head>
 <body>
-  <p>This is your dashboard</p> 
-  <p>Fill the form to create a business.</p>
-    <form action="" class="bizfm">
-        <label for="biznm">Business/ Company Name:</label>
-        <input type="text" id="biznm" name=""><br>
-        <label for="dateofinc">Date of Incorporation:</label>
-        <input type="text" id="dateofinc" name=""><br>
-        <label for="ind">Industry:</label>
-        <input type="text" id="ind" name=""><br>
-        <label for="servises">Services: </label>
-        <textarea name="" id="servises" placeholder="Enter all the services you render"></textarea><br>
-        <label for="shtdesc">Intro:</label>
-        <textarea name="" id="shtdesc" placeholder="Not more than 20 letters"  rows="5"></textarea>
-    </form>
-    <button onclick="createBusiness()" class="signbtn">Create</button>
+  <main>
+    <div class="mainandside">
+      <div>
+        <div class="sidebar">
+          <a class="" href="#home">Create A Business</a>
+          <a href="#news">Modify Business</a>
+          <a href="#contact">Generate Business Plan</a>
+          <a href="#about">Seek Help</a>
+        </div>
+        
+        <div class="content">
+          <h2>Responsive Sidebar Example</h2>
+          <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+          <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+          <h3>Resize the browser window to see the effect.</h3>
+        </div>
+      </div>
+      <div>
+        <p>This is your dashboard</p> 
+        <p>Fill the form to create a business.</p>
+          <form action="" class="bizfm">
+              <label for="biznm">Business/ Company Name:</label>
+              <input type="text" id="biznm" name=""><br>
+              <label for="dateofinc">Date of Incorporation:</label>
+              <input type="text" id="dateofinc" name=""><br>
+              <label for="ind">Industry:</label>
+              <input type="text" id="ind" name=""><br>
+              <label for="servises">Services: </label>
+              <textarea name="" id="servises" placeholder="Enter all the services you render"></textarea><br>
+              <label for="shtdesc">Intro:</label>
+              <textarea name="" id="shtdesc" placeholder="Not more than 20 letters"  rows="5"></textarea>
+          </form>
+          <button onclick="createBusiness()" class="signbtn">Create</button>
+      </div>
+
+    </div>
+    
+  </main>
+  
   
   <script src="./signupin.js"></script>
   

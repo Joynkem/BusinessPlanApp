@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 
 }
@@ -7,19 +8,87 @@ body{
     background: #bfdce7;
 }
 .signfm{
-background-color: #afa8e1;
-font-size: 3rem;
-}
+    background-color: #afa8e1;
+    font-size: 3rem;
+    }
 input{
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding: 12px;
-    border: 1px solid #f1afaf;
-    border-radius: 4px;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 12px;
+        border: 1px solid #f1afaf;
+        border-radius: 4px;
 }
 .planCats{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        background-color: #F98866;
+        padding: 10px;
+        }
+.mainandside{
     display: grid;
-    grid-template-columns: 35% 65%;
-    background-color: #F98866;
-    padding: 10px;
+    grid-template-columns:25% 75% ;
+    height: fit-content;
+}
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
   }
+  .sidebar a.active {
+    background-color: #e0c5e5;
+    color: white;
+  }
+@media screen and (max-width: 310px) {
+    .navbar{
+        background-color: rgb(15, 85, 165);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        transform: translateX(150%);
+        transition: transform 2000ms ease-in-out cubic horizontal(0.075,0.82, 0.165,1);
+    }
+    .menuContainer{
+        width: 32px;
+        position: relative;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .hamburger{
+        width: 100%;
+        height: 3px;
+        background-color: #43231a;
+        position: absolute;
+    }
+    .hamburger::after{
+        content: " ";
+        top: 6px;
+        width: 100%;
+        height: 3px;
+        background-color: #43231a;
+        position: absolute;
+    }
+    .hamburger::before{
+        content: " ";
+        top: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #43231a;
+        position: absolute;
+    }
+    .mainheader{
+        display: flex;
+        align-items: center;
+    }
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+    
+}
