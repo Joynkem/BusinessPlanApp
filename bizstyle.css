@@ -7,6 +7,48 @@
 body{
     background: #bfdce7;
 }
+.navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background-color: #ac3861;
+        color: #fff;
+}
+
+.logoimg{
+    width: 50px; 
+    height:50px;
+    margin-top: 2px;
+}
+.navlink{
+    display: flex;
+    gap: 2rem;
+    font-size: 18px;
+}
+/* .navlink li:hover {
+    background-color: #7dc9c9;
+    transition: 0.3s ease;
+  } */
+  
+.navbar button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 12rem;
+    height: 3.5rem;
+    background-color: #efe2ba;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+}
+  
+li {
+    list-style: none;
+}
 .signfm{
     background-color: #afa8e1;
     font-size: 3rem;
@@ -29,15 +71,35 @@ input{
     grid-template-columns:25% 75% ;
     height: fit-content;
 }
+.sidebar{
+    background-color: #1e4772;
+    border:  solid 3px #3f30c7;
+    margin-right: 2rem;
+    height: 37.8rem;
+}
 .sidebar a {
     display: block;
-    color: black;
+    color: #bfdce7;
     padding: 16px;
     text-decoration: none;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-family: "Sofia", sans-serif;
+    font-size: 15px;
+    
   }
   .sidebar a.active {
     background-color: #e0c5e5;
     color: white;
+  }
+  .sticky{
+    position: fixed;
+
+  }
+  .bizfm{
+    font-family: "Trirong", serif;
+    font-size: 15px;
+    
   }
 @media screen and (max-width: 310px) {
     .navbar{

@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bizstyle.css">
-    <title>Your Dashboard</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">    <title>Your Dashboard</title>
 </head>
 <body>
   <main>
     <div class="mainandside">
       <div>
-        <div class="sidebar">
-          <a class="" href="#home">Create A Business</a>
-          <a href="#news">Modify Business</a>
-          <a href="#contact">Generate Business Plan</a>
-          <a href="#about">Seek Help</a>
+        <div class="sidebar" class="sticky">
+          <span class="fa fa-upload" aria-hidden="true"></span>
+          <a class="font-effect-shadow-multiple" href="#createbus">Create A Business</a>
+          <a href="#news" class="font-effect-shadow-multiple">Modify Business</a>
+          <a href="#contact" class="font-effect-shadow-multiple">Generate Business Plan</a>
+          <a href="#about" class="font-effect-shadow-multiple">Seek Help</a>
+          
         </div>
         
-        <div class="content">
-          <h2>Responsive Sidebar Example</h2>
-          <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-          <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-          <h3>Resize the browser window to see the effect.</h3>
-        </div>
+        
       </div>
-      <div>
+      <div id="createbus">
         <p>This is your dashboard</p> 
         <p>Fill the form to create a business.</p>
           <form action="" class="bizfm">

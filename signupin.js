@@ -1,16 +1,25 @@
-//Create a user object
-// const userObj = {
-//     firstname:'Janet',
-//     lastname: 'Henry',
-//     businessCategory: 'Fashion'
 
-
-// }
 const fnm = document.getElementById('fstnm');
 const lnm = document.getElementById('lstnm');
 const pazzword = document.getElementById('pasworld');
 const emalle = document.getElementById('emale');
+// const bus1  = document.getElementById('busname1');
+// const bus2  = document.getElementById('busname2');
+// const bus3  = document.getElementById('busname3');
+// const bus4  = document.getElementById('busname4');
 
+// const bizArr = [bus1vee, bus2vee, bus3vee, bus4vee]
+// const cardgrid = " ";
+// const bus1vee = bus1.value;
+// const bus2vee = bus2.value;
+// const bus3vee = bus3.value;
+// const bus4vee = bus4.value;
+
+// function displayBizName () {
+//     for(let i = 0; i < bizArr.length; i++) {
+        
+//     }
+// }
 function regUser() {
 //Save the input values in userObj object.
     const userObj = {
@@ -58,9 +67,15 @@ function Business(buzinessname, dateofincorpo, iindustry, servises, introo, noof
     this.services = servises;
     this.intro = introo;
   }
+  const bizname1 = bizname.value;
+  const dateofinc1 = dateofinc.value;
+  const  servicces1 = servicces.value;
+  const industry1 = industry.value;
+  const intro1 =  intro.value;
+
+  // Create a Business object
+   const business1 = new Business(bizname1, dateofinc1, servicces1, industry1, intro1);
   
-  // Create a Person object
-  const business1 = new Business(bizname.value, dateofinc.value, industry.value, servicces.value, intro.value);
   function createBusiness () {
     //Convert the object to a string
     window.localStorage.setItem('business1', JSON.stringify(business1));
@@ -70,5 +85,6 @@ function Business(buzinessname, dateofincorpo, iindustry, servises, introo, noof
   console.log('NEWBUSINESSOBJECT', businessRehydrate);
   console.log(newBusiness1);
   console.log('BUSINESSNAME', businessRehydrate.businessname);
+  console.log(businessname);
 
 
