@@ -109,6 +109,36 @@ li {
     font-family: "Trirong", serif;
     font-size: 15px;
 }
+.catdiv{
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: -3rem;
+    margin-right: 15rem;
+    border-radius: 10px;
+}
+.landr{
+    margin-left: 30rem;
+    margin-bottom: -2rem;
+    background-color: #efe2ba;
+}
+.right{
+    margin-top: -1rem;
+    margin-left: 20rem;
+    background-color: #9a1750;
+}
+.left{
+    margin-top: -9.5rem;
+    margin-left: 40rem;
+    background-color: #da7893;
+}
+.ulandr{
+    margin-top: -8rem;
+    background-color: #73a6dc;
+}
+.randd{
+    background-color: #da7893;
+}
+
 @media screen and (max-width: 310px) {
     .navbar{
         background-color: rgb(15, 85, 165);
