@@ -49,17 +49,20 @@ a {
 li {
     list-style: none;
 }
-.signfm{
-    background-color: #afa8e1;
-    font-size: 3rem;
-    }
-input{
+
+.createbus label{
+    margin-left: 12rem;
+}
+.createbus input, textarea{
         margin-left: 0.5rem;
         margin-bottom: 0.5rem;
         padding: 12px;
-        border: 1px solid #f1afaf;
+        border: 1.3px solid #e19494;
         border-radius: 4px;
+        width: 80%;
+        /* resize: vertical; */
 }
+
 .planCats{
         display: grid;
         grid-template-columns: 35% 65%;
@@ -92,15 +95,20 @@ input{
     background-color: #e0c5e5;
     color: white;
   }
-  .sticky{
-    position: fixed;
-
+  label {
+    padding: 10px 10px 10px 0;
+    display: inline-block;
   }
+  .signbtn{
+    color: #1e4772;
+  }
+.sticky{
+    position: fixed;
+}
   .bizfm{
     font-family: "Trirong", serif;
     font-size: 15px;
-    
-  }
+}
 @media screen and (max-width: 310px) {
     .navbar{
         background-color: rgb(15, 85, 165);

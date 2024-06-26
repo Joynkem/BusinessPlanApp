@@ -3,23 +3,7 @@ const fnm = document.getElementById('fstnm');
 const lnm = document.getElementById('lstnm');
 const pazzword = document.getElementById('pasworld');
 const emalle = document.getElementById('emale');
-// const bus1  = document.getElementById('busname1');
-// const bus2  = document.getElementById('busname2');
-// const bus3  = document.getElementById('busname3');
-// const bus4  = document.getElementById('busname4');
 
-// const bizArr = [bus1vee, bus2vee, bus3vee, bus4vee]
-// const cardgrid = " ";
-// const bus1vee = bus1.value;
-// const bus2vee = bus2.value;
-// const bus3vee = bus3.value;
-// const bus4vee = bus4.value;
-
-// function displayBizName () {
-//     for(let i = 0; i < bizArr.length; i++) {
-        
-//     }
-// }
 function regUser() {
 //Save the input values in userObj object.
     const userObj = {
