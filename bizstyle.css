@@ -51,7 +51,16 @@ li {
 }
 
 .createbus label{
+    margin-left: 22rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: #0d2e41;
+    font-weight: bold;
+}
+.formdiv{
     margin-left: 12rem;
+    margin-top: 5rem;
 }
 .createbus input, textarea{
         margin-left: 0.5rem;
@@ -110,8 +119,8 @@ li {
     font-size: 15px;
 }
 .catdiv{
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 13rem;
     margin-bottom: -3rem;
     margin-right: 15rem;
     border-radius: 10px;
@@ -129,11 +138,11 @@ li {
 .left{
     margin-top: -9.5rem;
     margin-left: 40rem;
-    background-color: #da7893;
+    background-color: #6fafef;
 }
 .ulandr{
     margin-top: -8rem;
-    background-color: #73a6dc;
+    background-color: #cf8b31;
 }
 .randd{
     background-color: #da7893;

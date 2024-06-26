@@ -59,16 +59,38 @@ function Business(buzinessname, dateofincorpo, iindustry, servises, introo, noof
 
   // Create a Business object
    const business1 = new Business(bizname1, dateofinc1, servicces1, industry1, intro1);
-  
+   const business2 = new Business(bizname1, dateofinc1, servicces1, industry1, intro1);
+   const business3 = new Business(bizname1, dateofinc1, servicces1, industry1, intro1);
+   const business4 = new Business(bizname1, dateofinc1, servicces1, industry1, intro1);
+   const business5 = new Business(bizname1, dateofinc1, servicces1, industry1, intro1);
+   const business6 = new Business(bizname1, dateofinc1, servicces1, industry1, intro1);
+
   function createBusiness () {
     //Convert the object to a string
     window.localStorage.setItem('business1', JSON.stringify(business1));
-  }
+    window.localStorage.setItem('business2', JSON.stringify(business2));
+    window.localStorage.setItem('business3', JSON.stringify(business3));
+    window.localStorage.setItem('business4', JSON.stringify(business4));
+    window.localStorage.setItem('business5', JSON.stringify(business5));
+    window.localStorage.setItem('business6', JSON.stringify(business6));
+}
   const newBusiness1 = window.localStorage.getItem('business1');
-  const businessRehydrate = JSON.parse(newBusiness1);
-  console.log('NEWBUSINESSOBJECT', businessRehydrate);
+  const newBusiness2 = window.localStorage.getItem('business2');
+  const newBusiness3 = window.localStorage.getItem('business3');
+  const newBusiness4 = window.localStorage.getItem('business4');
+  const newBusiness5 = window.localStorage.getItem('business5');
+  const newBusiness6 = window.localStorage.getItem('business6');
+
+  const businessRehydrate1 = JSON.parse(newBusiness1);
+  const businessRehydrate2 = JSON.parse(newBusiness2);
+  const businessRehydrate3 = JSON.parse(newBusiness3);
+  const businessRehydrate4 = JSON.parse(newBusiness4);
+  const businessRehydrate5 = JSON.parse(newBusiness5);
+  const businessRehydrate6 = JSON.parse(newBusiness6);
+
+  console.log('NEWBUSINESSOBJECT', businessRehydrate1);
   console.log(newBusiness1);
-  console.log('BUSINESSNAME', businessRehydrate.businessname);
-  console.log(businessname);
+  console.log('BUSINESSNAME', businessRehydrate1.businessname);
+  console.log(business1);
 
 
