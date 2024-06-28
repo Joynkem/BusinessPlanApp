@@ -23,7 +23,7 @@ body{
 }
 .navlink{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     font-size: 18px;
 }
 /* .navlink li:hover {
@@ -34,11 +34,11 @@ body{
 .navbar button{
     margin-left: 1rem;
     margin-right: 1rem;
-    width: 12rem;
-    height: 3.5rem;
+    width: 4.5rem;
+    height: 2rem;
     background-color: #efe2ba;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -81,13 +81,13 @@ li {
 .mainandside{
     display: grid;
     grid-template-columns:25% 75% ;
-    height: fit-content;
+    /* max-height: 39rem; */
 }
 .sidebar{
     background-color: #1e4772;
-    border:  solid 3px #3f30c7;
+    border:  solid 3px #ddbaa9;
     margin-right: 2rem;
-    height: 37.8rem;
+    height: 39rem;
 }
 .sidebar a {
     display: block;
@@ -109,8 +109,15 @@ li {
     display: inline-block;
   }
   .signbtn{
-    color: #1e4772;
-  }
+background-color:#1e4772; 
+margin-left: 22rem;
+margin-right: 10rem;
+margin-bottom: 5rem;
+width: 10rem;
+height: 3rem;
+color: #dccad1;
+border-radius: 7px;
+ }
 .sticky{
     position: fixed;
 }
@@ -147,7 +154,19 @@ li {
 .randd{
     background-color: #da7893;
 }
+i{
+    color: #4a739f;
+}
+.griditem1{
+    background-color: #d6b5c3;
+    border-radius: 10px;
+}
+.inst{
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 0.5rem;
 
+}
 @media screen and (max-width: 310px) {
     .navbar{
         background-color: rgb(15, 85, 165);

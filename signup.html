@@ -9,28 +9,39 @@
     <title>Business Plan Sign Up Page</title>
 </head>
 <body>
-    <div class="formdiv">
-        <p>Sign up to have access to our free business plans.</p>
-        <form action="" class="createbus">
-            <label for="fstnm">First name:</label>
-            <input type="text" id="fstnm" name=""><br>
-            <!--<label for="busname4">Busines name:</label>
-            <input type="text" id="busname4" name=""><br>
-            <label for="busname3">Busines name:</label>
-            <input type="text" id="busname3" name=""><br>
-            <label for="busname2">Busines name:</label>
-            <input type="text" id="busname2" name=""><br>-->
-            <label for="busname1">Busines name:</label>
-            <input type="text" id="busname1" name=""><br>
-            <label for="lstnm">Last name:</label>
-            <input type="text" id="lstnm" name=""><br>
-            <label for="emale">Email:</label>
-            <input type="email" id="emale" name=""><br>
-            <label for="psworld">Password: </label>
-            <input type="password" id="pasworld" name="">
-        </form>
-        <button onclick="regUser()" class="signbtn"><a href="./success.html"></a>Sign Up</button>
-    </div>
+    <main>
+        <header class="mainheader">
+          
+            <nav class="navbar">
+                <div class="logo ">
+                    <img src="./player1latest.jpg" alt="Company logo" class="logoimg" >
+                </div>
+                <button><a href="./signup.html">Sign Up</a></button>
+                <button><a href="./signin.html">Sign In</a></button>
+                <ul class="navlink">
+                    <li class="navitem"><a href="./princing.html" class="navlist"></a>Pricing</li>
+                    <li class="navitem"><a href="./services.html" class="navlist"></a>Services</li>
+                    <li class="navitem"><a href="./faq.html" class="navlist"></a>FAQ</li>
+                    <li class="navitem"><a href="#" class="navlist"></a>Pricing</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="formdiv">
+            <p class="inst">Sign up to have access to our free business plans.</p>
+            <form action="" class="createbus">
+                <label for="fstnm">First name:</label>
+                <input type="text" id="fstnm" name=""><br>
+                <label for="lstnm">Last name:</label>
+                <input type="text" id="lstnm" name=""><br>
+                <label for="emale">Email:</label>
+                <input type="email" id="emale" name=""><br>
+                <label for="psworld">Password: </label>
+                <input type="password" id="pasworld" name="">
+            </form>
+            <button onclick="regUser()" class="signbtn"><a href="./success.html"></a>Sign Up</button>
+        </div>
+    </main>
+   
     
     <script src="./signupin.js"></script>
 </body>

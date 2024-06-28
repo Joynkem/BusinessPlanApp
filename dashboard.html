@@ -4,27 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bizstyle.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">    <title>Your Dashboard</title>
 </head>
 <body>
   <main>
+    <main class="menuWrapper">
+      <header class="mainheader">
+          
+          <nav class="navbar">
+              <div class="logo ">
+                  <img src="./player1latest.jpg" alt="Company logo" class="logoimg" >
+              </div>
+              <button><a href="./signup.html">Sign Up</a></button>
+              <button><a href="./signin.html">Sign In</a></button>
+              <img src="./avatar.png" alt="avatar" width="65" height="45">
+              <ul class="navlink">
+                  <li class="navitem"><a href="./princing.html" class="navlist"></a>Pricing</li>
+                  <li class="navitem"><a href="./services.html" class="navlist"></a>Services</li>
+                  <li class="navitem"><a href="./faq.html" class="navlist"></a>FAQ</li>
+                  <li class="navitem"><a href="#" class="navlist"></a>Pricing</li>
+              </ul>
+          </nav>
+      </header>
     <div class="mainandside">
       <div>
         <div class="sidebar" class="sticky">
-          <span class="fa fa-upload" aria-hidden="true"></span>
-          <a class="font-effect-shadow-multiple" href="#createbus">Create A Business</a>
-          <a href="#news" class="font-effect-shadow-multiple">Modify Business</a>
+          <a class="font-effect-shadow-multiple" href="#createbus"><i class="fa fa-business-time"></i>
+            Create A Business</a>
+          <a href="#news" class="font-effect-shadow-multiple"><i class="fa fa-pen-to-square"></i>
+            Modify Business</a>
           <a href="#contact" class="font-effect-shadow-multiple">Generate Business Plan</a>
-          <a href="#about" class="font-effect-shadow-multiple">Seek Help</a>
+          <a href="#about" class="font-effect-shadow-multiple" onclick="creategrid()" class="signbtn">
+            View your businesses</a>
           
         </div>
         
         
       </div>
       <div class="createbus">
-        <p>This is your dashboard</p> 
-        <p>Fill the form to create a business.</p>
+        <p class="inst">Fill this form to create a business.</p>
           <form action="" class="bizfm">
               <label for="biznm">Business/ Company Name:</label>
               <input type="text" id="biznm" name=""><br>
@@ -38,6 +57,8 @@
               <textarea name="" id="shtdesc" placeholder="Not more than 20 letters"  rows="5"></textarea>
             </form>
             <button onclick="createBusiness()" class="signbtn">Create</button>
+            <button </button>
+
 
       </div>
 

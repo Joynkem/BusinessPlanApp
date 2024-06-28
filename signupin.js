@@ -93,4 +93,33 @@ function Business(buzinessname, dateofincorpo, iindustry, servises, introo, noof
   console.log('BUSINESSNAME', businessRehydrate1.businessname);
   console.log(business1);
 
+//    function testloop () {
+//     let fruits = ['apple', 'mango', 'orange', 'sugar', 'pot', 'soap',];
+    
+//     for (let i = 0; i < fruits.length; i++) {
+//       let newdiv = document.createElement('div');
+//       newdiv.className = "bizview";
+//       newdiv.innerText = fruits;
+      
+//       document.body.appendChild(newdiv);
+//       console.log('This is ' + i)
+//        };
+//   }
+
+   function creategrid(){
+    const rows = 2;
+    const columns = 3;
+    body = document.body;
+  // Loop to create grid items and append them to the body
+  for (var i = 0; i < rows; i++) {
+      for (var j = 0; j < columns; j++) {
+          var gridItem = document.createElement("div");
+          gridItem.classList.add("grid-item1");
+
+    // Append the grid item to the body
+          body.appendChild(gridItem);
+      }
+  }
+  }
+  
 
