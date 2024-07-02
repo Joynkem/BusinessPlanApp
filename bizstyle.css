@@ -6,6 +6,8 @@
 }
 body{
     background: #bfdce7;
+    max-height: 100%;
+    overflow-y: hidden;
 }
 .navbar {
         display: flex;
@@ -71,7 +73,10 @@ li {
         width: 80%;
         /* resize: vertical; */
 }
-
+#sigup{
+    color: #dbe7ef;
+    font-size: 1.4rem;
+}
 .planCats{
         display: grid;
         grid-template-columns: 35% 65%;
@@ -117,6 +122,10 @@ width: 10rem;
 height: 3rem;
 color: #dccad1;
 border-radius: 7px;
+ }
+ .signinlink{
+    color: #763418;
+    font-weight: bold;
  }
 .sticky{
     position: fixed;
