@@ -6,8 +6,7 @@
 }
 body{
     background: #bfdce7;
-    max-height: 100%;
-    overflow-y: hidden;
+    
 }
 .navbar {
         display: flex;
