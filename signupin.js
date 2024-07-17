@@ -16,7 +16,7 @@ function regUser() {
 window.localStorage.setItem('userObj', JSON.stringify(userObj));
 }
 //Retrieve the object.
-const newUserObj = window.localStorage.getItem('userObj');
+const newUserObj = localStorage.getItem('userObj');
 const userRehydrate = JSON.parse(newUserObj)
 console.log("NEWUSEROBJECT", userRehydrate);
 console.log(newUserObj);
