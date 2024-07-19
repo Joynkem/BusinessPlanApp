@@ -18,7 +18,7 @@
     <div class="mainandside">
       
         <section class="sidebar">
-          <a class="font-effect-shadow-multiple" href="#createbus"><i class="fa fa-upload" aria-hidden="true"></i>
+          <a class="font-effect-shadow-multiple active" href="#createbus" id="create"><i class="fa fa-upload" aria-hidden="true"></i>
             Create A Business</a>
           <a href="#news" class="font-effect-shadow-multiple"><i class="fa fa-upload" aria-hidden="true"></i>
             Modify Business</a>
@@ -88,22 +88,31 @@
                     <h2 class="font-normal">Business Description</h2>
                     <!-- Step 1 input fields -->
             <div class="mt-3">
-                <span id="firstname-error" class="error-message"></span>
+            <span id="industry-error" class="error-message"></span>
 
+            <select name=" " id="industry" >
+                    <option>Choose an industry</option>
+                    <option>Finance</option>
+                    <option>Agriculture</option>
+                    <option>Energy</option>
+                    <option>Education</option>
+                    <option>Clothing and textiles</option>
+                    <option>Fitness and Beauty</option>
+                    <option>EReal Estate</option>
+                    <option>Advertising</option>
+                  </select>
+            <span id="companyname-error" class="error-message"></span>
             <input type="text"  id="comnm"  name=""placeholder="Company name" />
-            <span id="firstname-error" class="error-message"></span>
-
-			<input type="text"  id="dirnm"  name=""placeholder="Name of director" />
-            <span id="firstname-error" class="error-message"></span>
-
+            <span id="nameofdirector-error" class="error-message"></span>
+            <input type="text"  id="dirnm"  name=""placeholder="Name of director" />
+            <span id="companyaddress-error" class="error-message"></span>
             <input type="text"  id="comadd"  name=""placeholder="Company Address" />
-            <span id="firstname-error" class="error-message"></span>
-
+            <span id="cooverview-error" class="error-message"></span>
             <textarea name="" id="cooverview" placeholder="Enter an Overview of your business"  rows="5"></textarea>
-
             </div>
-                    <div class="mt-3">
-                        <button class="button btn-navigate-form-step"  class="signbtn" onclick="saveDescription()" type="button" step_number="2">Next</button>
+                <div class="mt-3">
+                        <button class="button btn-navigate-form-step"  class="signbtn" 
+                        onclick="saveDescription(); validateDescriptn()" type="button" step_number="2">Next</button>
                     </div>
                 </section>
                 <!-- Step 2 Content, default hidden on page load. -->

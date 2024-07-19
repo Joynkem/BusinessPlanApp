@@ -40,6 +40,9 @@ h2 {
     border: 1px solid #0e9594;
     background-color: #0e9594;
 }
+.colorRed{
+    color: red;
+}
 .mt-3 {
     margin-top: 2rem;
 }
