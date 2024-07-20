@@ -52,7 +52,7 @@ function validateSignUp () {
         isValid = false;
     }
 
-    if (pazzword.value === "" || password.length < 6) {
+    if (pazzword.value === "" || pazzword.length < 6) {
         passwordError.textContent =
             "Please enter a password with at least 8 characters.";
         isValid = false;
