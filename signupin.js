@@ -38,20 +38,6 @@ function signInUser() {
         'Either the password or email you entered is incorrect'
     }
 }
-
-//    function testloop () {
-//     let fruits = ['apple', 'mango', 'orange', 'sugar', 'pot', 'soap',];
-    
-//     for (let i = 0; i < fruits.length; i++) {
-//       let newdiv = document.createElement('div');
-//       newdiv.className = "bizview";
-//       newdiv.innerText = fruits;
-      
-//       document.body.appendChild(newdiv);
-//       console.log('This is ' + i)
-//        };
-//   }
-
    function creategrid(){
     const rows = 2;
     const columns = 3;

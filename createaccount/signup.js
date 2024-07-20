@@ -1,3 +1,4 @@
+
 const fnm = document.getElementById('fstnm');
 const lnm = document.getElementById('lstnm');
 const pazzword = document.getElementById('pasworld');
